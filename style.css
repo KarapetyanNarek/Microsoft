@@ -192,3 +192,95 @@ header {
 	background-size: 30px;
 	opacity: 0.5;
 }
+
+/*slideshow block*/
+
+.slidebar-block {
+	grid-column: 2/12;
+	background-color: #CD8C95;
+	height: 600px;
+}
+
+/*Product list block*/
+
+.product-list-block {
+	grid-column: 2/12;
+	height: 400px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0;
+}
+
+.product {
+	width: 23.8%;
+	background-color: #fff;
+	height: 100%;
+
+}
+
+.product>a {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+}
+
+.product>a img {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.product>a:hover img {
+	opacity: .7;
+}
+
+.product>a h3 {
+	color: #000;
+	font-size: 20px;
+	margin: 0;
+}
+
+.product>a p {
+	color: #000;
+	margin: 5px 0;
+	font-size: 16px;
+}
+
+.product>a .shop {
+	
+	height: 30px;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 30px;
+	position: relative;
+	color: #00ad97;
+	transition: 0.5s;
+
+}
+
+.product>a .shop:hover span {
+	border-bottom: 2px solid #00ad97;
+}
+.product>a .shop:hover::after {
+	transform: translateX(5px);
+}
+.product>a .shop::after {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: calc(50% - 6px);
+	right: -15px;
+	background: url(img/product/right-arrow.svg) no-repeat;
+	background-position: cover;
+	background-size: 12px;
+	font-weight: 900;
+	transition: 0.5s;
+}
