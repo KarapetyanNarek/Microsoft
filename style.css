@@ -284,3 +284,94 @@ header {
 	font-weight: 900;
 	transition: 0.5s;
 }
+
+
+/*Xbox one S slide*/
+
+.xbox-slide {
+	grid-column: 2/12;
+	height: 500px;
+	margin-top: 0;
+	background-color: #FFDAB9;
+	position: relative;
+}
+
+.xbox-slide>a img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.xbox-slide>a {
+	width: 100%;
+	height: 100%;
+}
+
+.xbox-one-text-block {
+	width: 35%;
+	height: 200px;
+	position: absolute;
+	top: calc(50% - 60px);
+	left: 5%;
+}
+
+.xbox-one-text-block>h2 {
+	font-size: 36px;
+	margin: 0;
+	color: #000;
+
+}
+
+.xbox-one-text-block>p {
+	color: #000;
+}
+
+.xbox-one-s-shop {
+	background-color: #000;
+	display: inline-block;
+	width: 140px;
+	height: 40px;
+	padding-left: 20px;
+	line-height: 40px;
+	position: relative;
+
+}
+
+.xbox-one-s-shop>span {
+	 color: #fff;
+	 text-transform: uppercase;
+	 font-size: 15px;
+	 font-weight: 600;
+	 display: inline-block;
+	 transition: 0.5s;
+	 margin: 0;
+	 padding: 0;
+
+
+}
+
+.xbox-one-s-shop::after {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: calc(50% - 6px);
+	right: 35px;
+	background: url(img/product/right-arrow-white.png) no-repeat;
+	background-position: cover;
+	background-size: 12px;
+	font-weight: 900;
+	transition: 0.5s;
+
+}
+
+.xbox-one-s-shop:hover span {
+	transform: translateX(-5px);
+}
+.xbox-one-s-shop:hover span>span {
+	border-bottom: 2px solid #fff;
+}
+.xbox-one-s-shop:hover::after {
+	transform: translateX(5px);
+}
