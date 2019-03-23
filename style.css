@@ -375,3 +375,25 @@ header {
 .xbox-one-s-shop:hover::after {
 	transform: translateX(5px);
 }
+
+
+
+/*microsoft For work block*/
+
+
+.microsoft-work {
+	grid-column: 2/12;
+	height: 400px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0;
+	flex-wrap: wrap;
+}
+
+.microsoft-work>h2 {
+	width: 100%;
+	font-weight: 900;
+}
+
